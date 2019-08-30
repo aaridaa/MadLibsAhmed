@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fadeScrollbars="true"
+    android:fillViewport="false">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    //ADJ
+
+    <TextView
+        android:id="@+id/textViewAdj"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Adjective: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAdj"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:background="@drawable/border"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    //NOUN
+
+    <TextView
+        android:id="@+id/textViewNoun"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Noun: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdj" />
+
+    <EditText
+        android:id="@+id/editTextNoun"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdj" />
+
+    //NAME
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Name: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNoun" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNoun" />
+
+    //JOB
+
+    <TextView
+        android:id="@+id/textViewJob"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Job: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <EditText
+        android:id="@+id/editTextJob"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    //ADJ 2
+
+    <TextView
+        android:id="@+id/textViewAdj2"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Adjective: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJob" />
+
+    <EditText
+        android:id="@+id/editTextAdj2"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextJob" />
+
+    //PLACE
+
+    <TextView
+        android:id="@+id/textViewPlace"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Place: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdj2" />
+
+    <EditText
+        android:id="@+id/editTextPlace"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdj2" />
+
+    //VERB
+
+    <TextView
+        android:id="@+id/textViewVerb"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Verb: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlace" />
+
+    <EditText
+        android:id="@+id/editTextVerb"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlace" />
+
+    //PHRASE
+
+    <TextView
+        android:id="@+id/textViewPhrase"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/pathway_gothic_one"
+        android:text="Phrase: "
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVerb" />
+
+    <EditText
+        android:id="@+id/editTextPhrase"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="@dimen/layoutHeight"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="132dp"
+        android:hint="                         "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextVerb" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="160dp"
+        android:text="submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhrase" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

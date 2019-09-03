@@ -31,10 +31,10 @@
         android:id="@+id/editTextAdj"
         android:layout_width="@dimen/layoutWidth"
         android:layout_height="@dimen/layoutHeight"
-        android:background="@drawable/border"
         android:layout_marginTop="92dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,6 +60,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAdj" />
 
@@ -85,6 +86,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNoun" />
 
@@ -110,6 +112,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
@@ -135,6 +138,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextJob" />
 
@@ -160,6 +164,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAdj2" />
 
@@ -185,6 +190,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPlace" />
 
@@ -210,6 +216,7 @@
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
         android:hint="                         "
+        android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextVerb" />
 
@@ -217,9 +224,11 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="160dp"
-        android:text="submit"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="200dp"
+        android:text="send info"
+        android:textAllCaps="false"
+        android:background="@drawable/button_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPhrase" />
 

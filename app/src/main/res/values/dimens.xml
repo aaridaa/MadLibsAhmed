@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="marginLeft">48dp</dimen>
+    <dimen name="marginLeft">100dp</dimen>
+    <dimen name="marginRight">115dp</dimen>
     <dimen name="layoutWidth">100dp</dimen>
     <dimen name="layoutHeight">30dp</dimen>
 

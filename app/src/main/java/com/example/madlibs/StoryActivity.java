@@ -3,6 +3,7 @@ package com.example.madlibs;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.graphics.fonts.Font;
 import android.os.Bundle;
 import android.view.View;
@@ -38,7 +39,6 @@ public class StoryActivity extends AppCompatActivity {
         String myPhrase = intent.getStringExtra(MY_PHRASE);
 
 
-
         strToDisplay = "One day in a "+ myAdj + " land, a(n) " + myNoun + " by the name of "
                 + myName + " built a great reputation as a thief, renowned by all the wrong people." +
                 " But in a turn of fate, " + myName + " decided to pursue a more honest work as a(n) "
@@ -47,9 +47,15 @@ public class StoryActivity extends AppCompatActivity {
                 "children to take care of. One of whom was sick with illness. He/she/they/it needed money" +
                 " before time ran out. So " + myName + " the " + myNoun + " went to " + myPlace +
                 " to look for a solution to such problems.There, in a middle of a crowd, " + myName + " began to "
-                + myVerb + " and suddenly scream \"" + myPhrase.toUpperCase() + "\"";
+                + myVerb + " and suddenly scream \"" + myPhrase.toUpperCase() + "!\"";
         TextView str = (TextView) findViewById(R.id.textViewLibs);
         str.setText(strToDisplay);
+    }
+
+    public void onCreate(View v)
+    {
+        overridePendingTransition(R.anim.fadein,R.anim.fadeout);
+        //source: https://stackoverflow.com/questions/3389501/activity-transition-in-android
     }
 
     public void shareInfo(View v)

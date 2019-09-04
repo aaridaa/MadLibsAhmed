@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MadLibs</string>
     <string name="chooser">Choose an app to send your message</string>
+    <string name="error_statement">Please enter in all values</string>
 </resources>

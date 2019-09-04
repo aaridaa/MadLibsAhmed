@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,29 +41,35 @@ public class MainActivity extends AppCompatActivity {
         String verbOneStr = verbOne.getText().toString();
         String phraseOneStr = phraseOne.getText().toString();
 
-        //if(adjOneStr.length() == 0 || nounOneStr.length() == 0 || nameOneStr.length() == 0 ||
-               // jobOneStr.length() == 0 || adjTwoStr.length() == 0 || placeOneStr.length() == 0 ||
-                //verbOneStr.length() == 0 || phraseOneStr.length() == 0)
-        //{
-           // Toast t = new Toast()
-        //}
+        if(adjOneStr.length() == 0 || nounOneStr.length() == 0 || nameOneStr.length() == 0 ||
+               jobOneStr.length() == 0 || adjTwoStr.length() == 0 || placeOneStr.length() == 0 ||
+                verbOneStr.length() == 0 || phraseOneStr.length() == 0)
+        {
+            Toast t = Toast.makeText(getApplicationContext(), "Please enter in all values", Toast.LENGTH_LONG);
+            t.setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL, 0, 100);
+            //source: https://stackoverflow.com/questions/3389501/activity-transition-in-android
+            t.show();
+        }
+        else {
 
-        // creating the intent object so i can send data
-        Intent intent = new Intent(this, StoryActivity.class);
+            // creating the intent object so i can send data
+            Intent intent = new Intent(this, StoryActivity.class);
 
 
-        // putting data from edit text fields into intent to send to other activity
-        // MY_NAME and MY_AGE are constants in InfoActivity class
-        intent.putExtra(StoryActivity.MY_ADJ, adjOneStr);
-        intent.putExtra(StoryActivity.MY_NOUN, nounOneStr);
-        intent.putExtra(StoryActivity.MY_NAME, nameOneStr);
-        intent.putExtra(StoryActivity.MY_JOB, jobOneStr);
-        intent.putExtra(StoryActivity.MY_ADJ2, adjTwoStr);
-        intent.putExtra(StoryActivity.MY_PLACE, placeOneStr);
-        intent.putExtra(StoryActivity.MY_VERB, verbOneStr);
-        intent.putExtra(StoryActivity.MY_PHRASE, phraseOneStr);
+            // putting data from edit text fields into intent to send to other activity
+            // MY_NAME and MY_AGE are constants in InfoActivity class
+            intent.putExtra(StoryActivity.MY_ADJ, adjOneStr);
+            intent.putExtra(StoryActivity.MY_NOUN, nounOneStr);
+            intent.putExtra(StoryActivity.MY_NAME, nameOneStr);
+            intent.putExtra(StoryActivity.MY_JOB, jobOneStr);
+            intent.putExtra(StoryActivity.MY_ADJ2, adjTwoStr);
+            intent.putExtra(StoryActivity.MY_PLACE, placeOneStr);
+            intent.putExtra(StoryActivity.MY_VERB, verbOneStr);
+            intent.putExtra(StoryActivity.MY_PHRASE, phraseOneStr);
 
-        startActivity(intent);
+            startActivity(intent);
+
+        }
     }
 
 

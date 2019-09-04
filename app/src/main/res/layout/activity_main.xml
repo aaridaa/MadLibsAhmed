@@ -34,7 +34,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="92dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -60,7 +61,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAdj" />
@@ -86,7 +88,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNoun" />
@@ -112,7 +115,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextName" />
@@ -138,7 +142,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextJob" />
@@ -164,7 +169,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAdj2" />
@@ -190,7 +196,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPlace" />
@@ -216,7 +223,8 @@
         android:layout_height="@dimen/layoutHeight"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="132dp"
-        android:hint="                         "
+        android:hint="                                                  "
+        android:gravity="center"
         android:background="@drawable/edit_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextVerb" />

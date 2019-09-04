@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void sendInfo(View v)
     {
+
+
         // getting a reference to my edit text fields
         EditText adjOne = (EditText) findViewById(R.id.editTextAdj);
         EditText nounOne = (EditText) findViewById(R.id.editTextNoun);
@@ -37,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
         String verbOneStr = verbOne.getText().toString();
         String phraseOneStr = phraseOne.getText().toString();
 
+        //if(adjOneStr.length() == 0 || nounOneStr.length() == 0 || nameOneStr.length() == 0 ||
+               // jobOneStr.length() == 0 || adjTwoStr.length() == 0 || placeOneStr.length() == 0 ||
+                //verbOneStr.length() == 0 || phraseOneStr.length() == 0)
+        //{
+           // Toast t = new Toast()
+        //}
+
         // creating the intent object so i can send data
         Intent intent = new Intent(this, StoryActivity.class);
 
@@ -54,4 +63,6 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+
 }

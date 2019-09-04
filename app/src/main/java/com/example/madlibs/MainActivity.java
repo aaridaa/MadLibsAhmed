@@ -38,12 +38,20 @@ public class MainActivity extends AppCompatActivity {
         String phraseOneStr = phraseOne.getText().toString();
 
         // creating the intent object so i can send data
-        //Intent intent = new Intent(this, InfoActivity.class);
+        Intent intent = new Intent(this, StoryActivity.class);
 
 
         // putting data from edit text fields into intent to send to other activity
         // MY_NAME and MY_AGE are constants in InfoActivity class
-       // intent.putExtra(InfoActivity.MY_ADJ, adjOneStr);
-        //intent.putExtra(InfoActivity.MY_NOUN, nounOneStr);
+        intent.putExtra(StoryActivity.MY_ADJ, adjOneStr);
+        intent.putExtra(StoryActivity.MY_NOUN, nounOneStr);
+        intent.putExtra(StoryActivity.MY_NAME, nameOneStr);
+        intent.putExtra(StoryActivity.MY_JOB, jobOneStr);
+        intent.putExtra(StoryActivity.MY_ADJ2, adjTwoStr);
+        intent.putExtra(StoryActivity.MY_PLACE, placeOneStr);
+        intent.putExtra(StoryActivity.MY_VERB, verbOneStr);
+        intent.putExtra(StoryActivity.MY_PHRASE, phraseOneStr);
+
+        startActivity(intent);
     }
 }
